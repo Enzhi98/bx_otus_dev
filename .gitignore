@@ -87,7 +87,7 @@
 /workgroups/
 
 /vendor/
-
+/500.html
 *.zip
 *.tar.gz
 *.back
