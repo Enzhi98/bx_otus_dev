@@ -1,7 +1,4 @@
-<?
- require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
- require_once $_SERVER['DOCUMENT_ROOT'] . '/local/php_interface/classes/Debug/Log.php'; 
- ?>
+<?  require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php"); ?>
 <?php
 $APPLICATION->SetTitle("Добавление в лог");
 ?>
@@ -12,10 +9,7 @@ $APPLICATION->SetTitle("Добавление в лог");
     </li>
 </ul>
 <?
-
-
-\App\Debug\Log::addLog('OnBeforeHLEAdd');
-
+    \App\Debug\Log::addLog('OnBeforeHLEAdd');
 
 ?>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
