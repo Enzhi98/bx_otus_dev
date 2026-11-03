@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Добавление в лог");
     </li>
 </ul>
 <?
-    \App\Debug\Log::addLog('OnBeforeHLEAdd');
+    \App\Debug\Log::addLog('Открыта страница writelog.php');
 
 ?>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

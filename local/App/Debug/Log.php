@@ -27,9 +27,9 @@ class Log extends FileExceptionHandlerLog
     {
         $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/logs/' . $fileName;
 
-        if ($timeVersion) {
-            $logFile .= '_' . date("d.m.Y");
-        }
+        // if ($timeVersion) {
+        //     $logFile .= '_' . date("d.m.Y");
+        // }
         $logFile .= '.log';
 
         $_message = date("d.m.Y H:i:s");
