@@ -81,7 +81,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/local/logs/exceptions.log"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     local/logs/exceptions.log
@@ -92,7 +92,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/writeexception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writeexception.php
@@ -103,7 +103,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearexception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearexception.php

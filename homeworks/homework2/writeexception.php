@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Ошибка для exeption");
     </li>
 </ul>
 <?
-// ошибка для exeption
+ $res = 1/0;
 
 ?>
 

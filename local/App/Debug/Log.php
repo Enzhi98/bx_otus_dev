@@ -2,12 +2,11 @@
 
 namespace App\Debug;
 
-/*
- * \App\Debug\Log::addLog('OnBeforeHLEAdd');
- */
+
 
 use Bitrix\Main\Diag\ExceptionHandlerFormatter;
 use Bitrix\Main\Diag\FileExceptionHandlerLog;
+use Bitrix\Main\Diag\FileLogger;
 
 class Log extends FileExceptionHandlerLog
 {
@@ -64,9 +63,32 @@ class Log extends FileExceptionHandlerLog
      * @return void
      */
     
-    // public function write($exception, $logType): void
-    // {
-    // }
+    public  function write($exception, $logType, ){
+        $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/logs/exceptions.log';
+        $text = ExceptionHandlerFormatter::format($exception, false, $this->level);
+
+        $context = [
+            'type' => static::logTypeToString($logType),
+        ];
+
+        $logLevel = static::logTypeToLevel($logType);
+
+        $message = "OTUS - {date} - Host: {host} - {type} - {$text}\n";
+        $customLogger = new FileLogger($logFile, 1000000);
+        $customLogger->log($logLevel, $message, $context);
+    }
+
+    /**
+     * cleanException
+     *
+     * @param string $fileName
+     * @return void
+     */
+    public static function cleanException(string $fileName = 'exceptions') {
+        $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/logs/' . $fileName;
+        $logFile .= '.log';
+        file_put_contents($logFile, '');
+    }
 
 }
 
