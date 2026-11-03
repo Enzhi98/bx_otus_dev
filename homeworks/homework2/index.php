@@ -28,11 +28,10 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/local/logs/custom.log"                
                    class="d-flex justify-content-between align-items-center">
-                <span>
-                    <? print_r( $_SERVER['DOCUMENT_ROOT']) ?> 
-                    local/logs/log_custom.log
+                <span>                    
+                    local/logs/custom.log
                 </span>
                     <span class="badge bg-success">
                     Файл лога из п1 ДЗ
@@ -40,7 +39,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/writelog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writelog.php
@@ -51,7 +50,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearlog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearlog.php
