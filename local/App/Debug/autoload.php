@@ -20,7 +20,7 @@ spl_autoload_register(function ($className) {
     $className = str_replace('\\', '/', $className);
 
     $filePath = __DIR__ .  $className . '.php';
-    print_r($filePath);
+
 
     if (file_exists($filePath))
     {
