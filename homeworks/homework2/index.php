@@ -31,7 +31,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
-                    <? print_r( $_SERVER['DOCUMENT_ROOT']) ?> ?>
+                    <? print_r( $_SERVER['DOCUMENT_ROOT']) ?> 
                     local/logs/log_custom.log
                 </span>
                     <span class="badge bg-success">
