@@ -10,5 +10,6 @@ echo "No find composer";
 if (file_exists(__DIR__ . '/../App/autoload.php')) {
     require_once(__DIR__ . '/../App/autoload.php');
 }else {
-echo "No find autoload.php. ."."__DIR__ . '/../App/autoload.php'";
+$autoloadPath = __DIR__ . '/../App/autoload.php';
+var_dump($autoloadPath);
 }
