@@ -46,7 +46,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
     <section class="container-fluid">
 
         <h1 class="mb-3"><? $APPLICATION->ShowTitle() ?></h1>
-        <div class="mb-3">Репозиторий: <a href="https://github.com/">https://github.com/</a> <span style="color:red;">&larr; указать URL своего репозитория</span></div>
+        <div class="mb-3">Репозиторий: <a href="https://github.com/Enzhi98/bx_otus_dev">bx_otus_dev</a> <span style="color:red;"></span></div>
         <ul class="item-list">
             <li>
                 <h2 class="item done">
